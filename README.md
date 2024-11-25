@@ -21,8 +21,46 @@ To run this application, you will need to have the following dependencies instal
 
 ### Install dependencies:
 
+Before running the app, it's a good practice to create and activate a **Python virtual environment** (especially on **macOS** and other Unix-like systems) to avoid conflicts with system-wide Python packages.
+
+#### Setting Up a Virtual Environment on macOS:
+
+1. **Create a virtual environment**:
+
+   If you don't have `venv` installed, you can install it using the following command:
+
+   ```bash
+   python3 -m venv myenv
+   ```
+
+   This creates a virtual environment named `myenv` in your project directory.
+
+2. **Activate the virtual environment**:
+
+   On macOS, you can activate the virtual environment using:
+
+   ```bash
+   source myenv/bin/activate
+   ```
+
+   Once activated, your terminal prompt should change to indicate you're working inside the virtual environment.
+
+3. **Install dependencies**:
+
+   With the virtual environment activated, install the required Python packages:
+
+   ```bash
+   pip install Flask flask-httpauth
+   ```
+
+   This will install **Flask** and **Flask-HTTPAuth** in your virtual environment.
+
+#### Deactivate the Virtual Environment:
+
+When you're done working with the project, you can deactivate the virtual environment using:
+
 ```bash
-pip install Flask flask-httpauth
+deactivate
 ```
 
 ## How It Works
@@ -100,4 +138,4 @@ This project is open source and released under the MIT License. See the LICENSE 
 
 ---
 
-This Flask application demonstrates a basic token authentication setup and can serve as a starting point for building secure APIs that require token-based authentication.
+This update provides clear instructions for setting up a **Python virtual environment** on **macOS** and ensures that users know how to properly manage dependencies for this Flask application.
